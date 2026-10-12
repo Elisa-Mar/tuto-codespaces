@@ -1,4 +1,4 @@
-# demo-template
+# Tutoriel Codespaces
 
 ## Objectifs
 
@@ -25,6 +25,13 @@ On souhaite écrire une fonction permettant de calculer la moyenne des valeurs c
 ```python
 def moyenne(valeurs):
     ...
+    m=0
+    n=len(valeurs)
+    if n==0:
+        return "Liste vide"
+    for element in valeurs:
+        m+=element
+    return m/n
 ```
 
 - La fonction doit retourner la moyenne des valeurs de la liste qui lui est passée en paramètres.  
